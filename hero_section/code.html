@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobile Portfolio Hero Section</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#B30000",
+                        "background-light": "#F5F5F5",
+                        "text-black": "#1A1A1A",
+                        "text-white": "#F5F5F5",
+                        "text-gray": "#8C8C8C",
+                    },
+                    fontFamily: {
+                        "sans": ["Montserrat", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231A1A1A' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light text-text-black font-sans antialiased selection:bg-primary selection:text-white">
+<div class="relative flex h-screen w-full flex-col overflow-hidden">
+<div class="absolute inset-0 z-0 bg-hero-pattern opacity-100 pointer-events-none"></div>
+<header class="relative z-10 flex items-center justify-between px-6 pt-14 pb-4 w-full">
+<div class="flex items-center justify-center size-10 border border-black/10 text-text-black backdrop-blur-sm">
+<span class="font-serif text-xl font-bold">A</span>
+</div>
+<button class="group flex items-center justify-center size-12 hover:bg-black/5 transition-colors">
+<span class="material-symbols-outlined text-text-black text-3xl transition-transform">menu</span>
+</button>
+</header>
+<main class="relative z-10 flex flex-1 flex-col items-center justify-center px-6 pb-20 w-full text-center">
+<div class="flex flex-col items-center w-full max-w-md animate-fade-in-up">
+<div class="relative mb-10 group cursor-pointer">
+<div class="relative size-72 sm:size-80 overflow-hidden rounded-full border border-primary shadow-2xl">
+<div class="size-full bg-cover bg-center grayscale contrast-125 transition duration-500 hover:grayscale-0" data-alt="Professional desaturated headshot of Alex Sterling" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFj1xBTlBoxZtDyE7glW9u50f4fPzpXxBeFv8z4yFXs9gXHLcki3gedYMsxSpmFmrj_S8Ng6xJjN9LCoMPF2CHfvWrav6d9cpzcIQSJpiedRQpkQBEzk7uAS8MB3KY7P3LINlOp7unlZknrplTXDs8SCkVYRUsoKd9wYOgB_Rja2oTgTqYwNapqxbpTHPZJhN9sh7Sst40RmQw51h4EnckSNkGsnqH5pyM6FUL_iTnVNdoV0Juz49Hdr8Tx2y5CeLgE46uW1MEV7o');">
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4 mb-12">
+<div class="relative inline-block mx-auto">
+<h1 class="font-serif text-4xl sm:text-5xl font-bold text-text-black leading-tight tracking-tight">
+                        Alex Sterling
+                    </h1>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-12 h-[2px] bg-primary"></div>
+</div>
+<p class="text-text-gray text-sm sm:text-base font-medium tracking-widest uppercase mt-3">
+                        UI/UX Designer. Innovator. Strategist.
+                    </p>
+</div>
+<button class="relative w-full max-w-[280px] h-14 bg-primary text-text-white font-bold text-sm tracking-widest uppercase transition-all active:scale-[0.98] hover:bg-[#990000] flex items-center justify-center gap-3 group overflow-hidden rounded-none shadow-md">
+<span class="relative z-10">Explore My Work</span>
+<span class="material-symbols-outlined relative z-10 text-xl transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</main>
+<div class="h-6 w-full"></div>
+</div>
+<style>@keyframes fade-in-up {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.8s ease-out forwards;
+        }
+    </style>
+</body></html>

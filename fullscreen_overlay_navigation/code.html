@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fullscreen Overlay Navigation - Red Subtitles</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#B30000", // Accent Red
+                        "background-light": "#F5F5F5", // Primary White
+                        "background-dark": "#1A1A1A", // Primary Black
+                    },
+                    fontFamily: {
+                        "serif": ["Playfair Display", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }@keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-enter {
+            animation: slideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }.delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 150ms; }
+        .delay-300 { animation-delay: 200ms; }
+        .delay-400 { animation-delay: 250ms; }
+        .delay-500 { animation-delay: 300ms; }
+    </style>
+<style>
+        body {
+          min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-serif text-background-dark overflow-hidden selection:bg-primary selection:text-white">
+<div class="relative flex h-screen w-full flex-col bg-[#F5F5F5] z-50">
+<header class="flex items-center justify-between p-6 w-full absolute top-0 left-0 z-20">
+<div class="text-[#1A1A1A]/50 text-sm tracking-widest uppercase font-sans font-bold opacity-0 md:opacity-100">
+            Portfolio
+        </div>
+<button class="group flex items-center justify-center size-12 rounded-sm hover:bg-black/5 transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-primary/50">
+<span class="material-symbols-outlined text-primary text-4xl group-hover:scale-110 transition-transform duration-300" style="font-weight: 300;">
+                close
+            </span>
+<span class="sr-only">Close Menu</span>
+</button>
+</header>
+<nav class="flex-1 flex flex-col justify-center items-center px-6 w-full max-w-lg mx-auto">
+<ul class="flex flex-col gap-10 md:gap-12 w-full">
+<li class="opacity-0 animate-enter delay-100">
+<a class="group block w-full text-center md:text-left" href="#">
+<div class="relative inline-flex flex-col items-center md:items-start">
+<span class="text-5xl md:text-6xl font-medium text-[#1A1A1A] group-hover:text-primary transition-colors duration-300 leading-tight">
+                            Home
+                        </span>
+<span class="mt-2 text-lg md:text-xl text-primary font-italic italic tracking-wide transition-colors duration-300">
+                            — The Protagonist
+                        </span>
+</div>
+</a>
+</li>
+<li class="opacity-0 animate-enter delay-200">
+<a class="group block w-full text-center md:text-left" href="#">
+<div class="relative inline-flex flex-col items-center md:items-start">
+<span class="text-5xl md:text-6xl font-medium text-[#1A1A1A] group-hover:text-primary transition-colors duration-300 leading-tight">
+                            Skills
+                        </span>
+<span class="mt-2 text-lg md:text-xl text-primary font-italic italic tracking-wide transition-colors duration-300">
+                            — The Acumen
+                        </span>
+</div>
+</a>
+</li>
+<li class="opacity-0 animate-enter delay-300">
+<a class="group block w-full text-center md:text-left" href="#">
+<div class="relative inline-flex flex-col items-center md:items-start">
+<span class="text-5xl md:text-6xl font-medium text-[#1A1A1A] group-hover:text-primary transition-colors duration-300 leading-tight">
+                            Resume
+                        </span>
+<span class="mt-2 text-lg md:text-xl text-primary font-italic italic tracking-wide transition-colors duration-300">
+                            — The Chronicle
+                        </span>
+</div>
+</a>
+</li>
+<li class="opacity-0 animate-enter delay-400">
+<a class="group block w-full text-center md:text-left" href="#">
+<div class="relative inline-flex flex-col items-center md:items-start">
+<span class="text-5xl md:text-6xl font-medium text-[#1A1A1A] group-hover:text-primary transition-colors duration-300 leading-tight">
+                            Projects
+                        </span>
+<span class="mt-2 text-lg md:text-xl text-primary font-italic italic tracking-wide transition-colors duration-300">
+                            — The Endeavors
+                        </span>
+</div>
+</a>
+</li>
+<li class="opacity-0 animate-enter delay-500">
+<a class="group block w-full text-center md:text-left" href="#">
+<div class="relative inline-flex flex-col items-center md:items-start">
+<span class="text-5xl md:text-6xl font-medium text-[#1A1A1A] group-hover:text-primary transition-colors duration-300 leading-tight">
+                            Contact
+                        </span>
+<span class="mt-2 text-lg md:text-xl text-primary font-italic italic tracking-wide transition-colors duration-300">
+                            — The Correspondence
+                        </span>
+</div>
+</a>
+</li>
+</ul>
+</nav>
+<footer class="absolute bottom-0 left-0 w-full p-6 text-center z-20 opacity-0 animate-enter delay-500">
+<div class="flex flex-col items-center gap-2">
+<div class="w-8 h-[1px] bg-primary mb-2"></div>
+<p class="text-xs text-neutral-500 font-sans tracking-widest uppercase">
+                Designed by UI/UX Designer © 2024
+            </p>
+</div>
+</footer>
+<div class="absolute inset-0 pointer-events-none z-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-neutral-200/50 to-transparent opacity-40" data-alt="Subtle light radial gradient fading into white background"></div>
+</div>
+</body></html>
